@@ -5,15 +5,12 @@
 
 class Race {
   private:
-    int TRACK LENGTH;
-    int NUM_HORSES;
-    int trackLength;
+    int TRACK LENGTH = 15;
+    int NUM_HORSES = 5;
+    int horseList[NUM_HORSES] = {0,1,2,3,4};
   public:
-    Horse();
-    void init(int index, int trackLength);
-    void printLane();
+    Race();
     void advance();
-    bool isWinner();
 };
 
 #endif
